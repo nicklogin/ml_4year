@@ -1,0 +1,6 @@
+4. Compare logistic regression and SVM: decision surface and robustness
+Logistic regression - decision maker - logistic function of weighted linear combination of parameters and bias:
+y_pred = 1/(1+e^(-wx-b))
+SVM - decision maker - sign of weighted linear combination of weighted linear combination of parameters and bias:
+y_pred = sign(wx+b)
+SVM tries to maximize the margin between classes (|wx-b|), while Logistic Regression tries to maximise probability of positive examples. SVM returns hard class labels, while SVM returns probabilities. SVM is more robust for linearly separable data with big numner of dimensions. Logistic Regression is more robust on noisy data than SVM because of smooth decision and loss functions.
